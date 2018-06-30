@@ -1,0 +1,32 @@
+.Body{
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+
+}
+.topings{
+    background-image: url(../images/background.jpg);
+    padding: 0px;
+    border-block-end: 1px;
+    align-items: center;
+    bottom: 0;
+}
+.select{
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: deepskyblue;
+}
+#form{
+    margin: 1em;
+    padding-block-end: 2px;
+    text-align: center;
+}
+#Ok{
+    background-color: springgreen;
+    padding: 10px 15px;
+    width: 50%;
+}
