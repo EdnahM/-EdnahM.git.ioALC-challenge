@@ -1,5 +1,5 @@
 const constCacheName='free_currency_converter';
-const cacheFiles=['/','/index.html','/css/main.css','/scripts/index.js','/scripts/app.js','idb.js']
+const cacheFiles=['/','/index.html','/css/main.css','/scripts/index.js','/scripts/application.js','idb.js']
 
 self.addEventListener('install',(event) => {
    event.waitUntil(caches.open(fileCacheName)

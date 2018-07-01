@@ -48,13 +48,13 @@ formOk.addEventListener('Ok', event => {
         
         const convertResult = Object.entries(data.results);
        
-        let rate = convertResult[0][1].val;
+        let rate = convertResult[0][1].value;
         return rate;
        
     }).then(rate => {
         let inputAmount = document.getElementById('fromAmount').value;
         let outputValue= rate * inputAmount;
-        document.getElementById('toAmount').value =outputValue;
+        document.getElementById('toAmount').value = outputValue;
     })
 });
             
