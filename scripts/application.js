@@ -39,14 +39,14 @@ formOk.addEventListener('Ok', event => {
   event.preventDefault();
   let fromField = document.getElementById('fromCurrency').value;
   let toField = document.getElementById('toCurrency').value;
-   urlQuery =  'https://free.currencyconverterapi.com/api/v5/convert?q='
+   urlQuery =  `https://free.currencyconverterapi.com/api/v5/convert?q=${query}&compact=y`
    queryString = urlQuery + fromField + '_' + toField;
     fetch(queryString)
     .then(response =>{
         return response.json();
     }).then(data => {
         
-        const convertResult = Object.entries(data.results);
+        const convertResult = Object.entries(data.query);
        
         let rate = convertResult[0][1].value;
         return rate;

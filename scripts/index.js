@@ -1,7 +1,7 @@
 const storeName = 'currency-converter-store';
 class localIndexdb{
 
-  static open(dbName='Currency-Converter-Code-Challenge', version=1) {
+  static open(dbName='currency-converter-code-challenge', version=1) {
     return new Promise((resolve, reject) => {
       if (!window.indexedDB) {
         const message = "Check out on your Browser";
@@ -54,4 +54,4 @@ class localIndexdb{
     });
   }
 }
-window.LocalIndexedStorage = LocalIndexedStorage;
+//window.LocalIndexedStorage = currency-converter-code-challenge;
