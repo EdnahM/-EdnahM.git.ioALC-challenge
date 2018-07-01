@@ -54,4 +54,4 @@ class localIndexdb{
     });
   }
 }
-//window.LocalIndexedStorage = currency-converter-code-challenge;
+//window.LocalIndexedStorage = localIndexed storage;

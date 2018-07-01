@@ -39,9 +39,10 @@ formOk.addEventListener('Ok', event => {
   event.preventDefault();
   let fromField = document.getElementById('fromCurrency').value;
   let toField = document.getElementById('toCurrency').value;
-   urlQuery =  `https://free.currencyconverterapi.com/api/v5/convert?q=${query}&compact=y`
-   queryString = urlQuery + fromField + '_' + toField;
-    fetch(queryString)
+  let urlquery =  `https://free.currencyconverterapi.com/api/v5/convert?q=${query}&compact=y`
+  let query = `${fromField}_${toField}`;
+
+    fetch(urlquery)
     .then(response =>{
         return response.json();
     }).then(data => {
@@ -63,7 +64,7 @@ if ('serviceWorker' in navigator) {
       console.log('Registration successful');
      })
      .catch((error) => {
-        console.log('error: occured', error);
+        console.log('error: occured in registering the service worker', error);
      });
 
 }
