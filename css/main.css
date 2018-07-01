@@ -1,5 +1,5 @@
 .Body{
-    background-color: teal;
+   background-color: beige;
     margin: 0;
     padding: 0;
     line-height: 2em;
@@ -12,13 +12,31 @@
     padding: 0px;
     border-block-end: 1px;
     align-items: center;
-    bottom: 0;
+    top: -0px;
+    height: 50px;
 }
 .select{
     width: 85%;
     padding: 12px 20px;
     margin: 8px 0;
-    background-color: deepskyblue;
+    background-color: rgb(111, 119, 235);
+}
+.footer{
+    background-image: url(../images/background.jpg);
+    position: absolute;
+    /*height: 100px;*/
+    align-content: center;
+    width: 100%;
+    bottom:0;
+
+}
+ul li {
+    list-style: none; 
+    display: inline-block; padding: 1em;
+}
+ul li.media{align-self: center;}
+.media{
+    display: inline-block;
 }
 #form{
     margin: 1em;

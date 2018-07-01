@@ -34,7 +34,7 @@ fetch('https://free.currencyconverterapi.com/api/v5/currencies')
     })
 
 
-const formSubmit= document.getElementById('form');
+const formOk= document.getElementById('form');
 formOk.addEventListener('Ok', event => {
   event.preventDefault();
   let fromField = document.getElementById('fromCurrency').value;
